@@ -1,7 +1,7 @@
 terraform {
   backend "s3" {
-    bucket         = "wordcount-fargate-tfstate"
-    key            = "wordcount-fargate-tfstate.tfstate"
+    bucket         = "word-fargate-tfstate"
+    key            = "word-fargate-tfstate.tfstate"
     region         = "eu-west-1"
     encrypt        = true
     dynamodb_table = "wordcount-fargate-tf-state-lock"
